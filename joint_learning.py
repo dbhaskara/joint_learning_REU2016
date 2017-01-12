@@ -19,6 +19,7 @@ LOUO = 'B'
 ###### CHANGE THESE PATHS TO DIRECT TO LOCAL sparse-z DIRECTORY
 train = sc.loadmat('/cis/home/divya/SDSDL/sparse-z/LOUO/Suturing/LOUO-'+LOUO+'.mat')
 test = sc.loadmat('/cis/home/divya/SDSDL/sparse-z/LOUO/Suturing/LOUO-'+LOUO+'-test.mat')
+initialization_data_filename = '/cis/home/divya/SDSDL/initialization/LOUO/Suturing-LOUO-'+LOUO+'-n-35-forsupervised.mat'
 ######
 
 X_train = train['X_train']
@@ -33,7 +34,6 @@ c = 1
 
 gradient_in = 'joint_learning/input-iter'
 gradient_out = 'joint_learning/output-iter'
-initialization_data_filename = '/cis/home/divya/SDSDL/initialization/LOUO/Suturing-LOUO-'+LOUO+'-n-35-forsupervised.mat'
 prev_psi_update = initialization_data_filename
 
 metrics, y_star, y_gt, ws, hamming, obj = crf.crf_optimize(X_train, y_train, X_test, y_test, None, n_wp_iter, skip_chain)
