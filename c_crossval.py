@@ -14,8 +14,11 @@ import matlab.engine
 
 # Extract training and testing data
 # These are the sparse codes
+
+###### CHANGE THESE PATHS TO DIRECT TO LOCAL sparse-z DIRECTORY
 train = sc.loadmat('/cis/home/divya/SDSDL/sparse-z/LOUO/Suturing/LOUO-B.mat')
 test = sc.loadmat('/cis/home/divya/SDSDL/sparse-z/LOUO/Suturing/LOUO-B-test.mat')
+######
 
 X_train = train['X_train']
 y_train = train['y_train']
