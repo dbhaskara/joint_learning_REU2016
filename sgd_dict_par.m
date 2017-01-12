@@ -1,3 +1,6 @@
+% Calculates the gradient of the objective function with respect to the dictionary psi, 
+% updates the dictionary, and recalculates the sparse codes
+
 function x = sgd_dict(initialization_data_filename, gradient_filename, prev_psi_update, cur_iter)
 
 x = cur_iter;
