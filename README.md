@@ -44,8 +44,8 @@ Each experiment was run on the JHU foo.cis.jhu.edu server.
   
 5. Run joint learning (finally!)
   1. Check paths to SPAMS and SDSDL in sgd_dict_par.m
-  2. Check the paths to the training data, testing data, and the initialization data in joint_learning.py
-  3. Specify the task (Suturing, Knot_Tying, Needle_Passing) in the path, the experimental setup (LOSO or LOUO), and which user/supertrial is being left out. 
+  2. Check the paths to the training data, testing data, and the initialization data in ```joint_learning.py```
+  3. Specify the task (Suturing, Knot_Tying, Needle_Passing) in the path, the experimental setup (LOSO or LOUO), and which user/supertrial is being left out. Specify the parameters ```n_psi_updates```, ```n_wp_iter```, ```skip_chain```, ```c```.
   4. Create a directory with the name ```joint_learning``` in the same directory as the ```joint_learning.py``` script
   5. Run the ```joint_learning.py``` script
   6. The objective function plot and the test accuracy plot will be saved into the joint_learning directory. 
