@@ -1,3 +1,6 @@
+# SKIP-CHAIN experiments
+# Results here: https://drive.google.com/open?id=1TKmnDvDMJ_4a_UxHB8ot_l84qP6lXoekldKMOkymX4E
+
 import scipy.io as sc
 import numpy as np
 import matplotlib.pyplot as plt
