@@ -1,7 +1,10 @@
 %%%%% After joint learning the dictionary and classifier, extract the sparse codes of the JIGSAWS data and save them in the folder sparse-z
 
+
+###### CHANGE THESE PATHS TO DIRECT TO SDSDL DIRECTORIES
 in_path_prefix = '~/SDSDL/pca-sdl/';
 out_path_prefix = '~/SDSDL/sparse-z/';
+######
 
 % task: {task name, pca/lasso parameters LOUO, pca/lasso paratmeters LOSO, window size LOUO, window size LOSO}
 task = {    {'Suturing', 'n-35_m-200_lambda-lasso-0.1_delay-1/', 'n-35_m-100_lambda-lasso-0.1_delay-1/', 71, 81}, 
