@@ -16,8 +16,10 @@ import matlab.engine
 
 LOUO = 'B'
 
+###### CHANGE THESE PATHS TO DIRECT TO LOCAL sparse-z DIRECTORY
 train = sc.loadmat('/cis/home/divya/SDSDL/sparse-z/LOUO/Suturing/LOUO-'+LOUO+'.mat')
 test = sc.loadmat('/cis/home/divya/SDSDL/sparse-z/LOUO/Suturing/LOUO-'+LOUO+'-test.mat')
+######
 
 X_train = train['X_train']
 y_train = train['y_train']
